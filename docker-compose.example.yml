@@ -1,0 +1,51 @@
+version: '3.8'
+
+
+# 
+
+services:
+
+  web:
+    build: ./app
+    container_name: application
+    restart: always
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    volumes:
+      - ./app/:/usr/src/app/
+    env_file:
+      - ./.example.docker.env
+    depends_on:
+      - db
+
+  db:
+    image: postgres:14
+    container_name: postgres14_container
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=anton1
+      - POSTGRES_PASSWORD=anton1
+      - POSTGRES_DB=mstest1
+    ports:
+      - "5432:5432"
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: anton@nola.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  postgres_data:
+  pgadmin_data:

@@ -1,0 +1,56 @@
+[
+    {
+        "model": "machine.machine",
+        "pk": 1,
+        "fields": {
+            "name": "Токарныйапркен43V 18800",
+            "type": "LATHE",
+            "is_cnc": true
+        }
+    },
+    {
+        "model": "machine.machine",
+        "pk": 2,
+        "fields": {
+            "name": "Токарный сапрпар 18800",
+            "type": "LATHE",
+            "is_cnc": true
+        }
+    },
+    {
+        "model": "machine.machine",
+        "pk": 3,
+        "fields": {
+            "name": "Токаорл3V 18800",
+            "type": "LATHE",
+            "is_cnc": true
+        }
+    },
+    {
+        "model": "machine.machine",
+        "pk": 4,
+        "fields": {
+            "name": "Токарны987льрол3V 18800",
+            "type": "LATHE",
+            "is_cnc": true
+        }
+    },
+    {
+        "model": "machine.machine",
+        "pk": 5,
+        "fields": {
+            "name": "Токарн234234ML 1843V 18800",
+            "type": "LATHE",
+            "is_cnc": true
+        }
+    },
+    {
+        "model": "machine.machine",
+        "pk": 6,
+        "fields": {
+            "name": "Токарный станок MetalMaster MML 1843V 18800",
+            "type": "LATHE",
+            "is_cnc": true
+        }
+    }
+]

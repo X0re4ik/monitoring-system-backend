@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django на СтанОК</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Hello СтанОК</h2>
+
+    {% for machine in machines %}
+    <div>
+        {{ machine.name }} / {{ machine.type }} / {{ machine.is_cnc }}
+    </div>
+    {% endfor %}
+
+    {% for norm_detail in norm_details %}
+    <div>
+        {{ norm_detail.machine }} / {{ norm_detail.min_qty_detail }}
+    </div>
+    {% endfor %}
+</body>
+</html>

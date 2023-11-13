@@ -1,0 +1,50 @@
+[
+    {
+        "model": "machine.normdetail",
+        "pk": 1,
+        "fields": {
+            "machine": 1,
+            "min_qty_detail": 567
+        }
+    },
+    {
+        "model": "machine.normdetail",
+        "pk": 2,
+        "fields": {
+            "machine": 2,
+            "min_qty_detail": 678
+        }
+    },
+    {
+        "model": "machine.normdetail",
+        "pk": 3,
+        "fields": {
+            "machine": 3,
+            "min_qty_detail": 8
+        }
+    },
+    {
+        "model": "machine.normdetail",
+        "pk": 4,
+        "fields": {
+            "machine": 4,
+            "min_qty_detail": 546
+        }
+    },
+    {
+        "model": "machine.normdetail",
+        "pk": 5,
+        "fields": {
+            "machine": 5,
+            "min_qty_detail": 213
+        }
+    },
+    {
+        "model": "machine.normdetail",
+        "pk": 6,
+        "fields": {
+            "machine": 6,
+            "min_qty_detail": 213
+        }
+    }
+]
